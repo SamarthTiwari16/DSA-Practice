@@ -10,5 +10,4 @@ class Solution:
                 return half*half
             else:
                 return x * pow(x, n-1)
-            pow(x, n-1)
         return pow(x, n)
