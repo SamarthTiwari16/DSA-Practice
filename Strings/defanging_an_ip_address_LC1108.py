@@ -1,0 +1,11 @@
+address = "1.1.1.1"      # Output: "1[.]1[.]1[.]1"
+
+class Solution:
+    def defangIPaddr(self, address: str) -> str:
+        result = []
+        for ch in address:
+            if ch == ".":
+                result.append("[.]")
+            else:
+                result.append(ch)
+        return "".join(result)
